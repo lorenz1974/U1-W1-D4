@@ -40,7 +40,7 @@ header {
 
 header,
 footer {
-
+    margin: 0rem 1rem;
     color: white;
     margin-top: 20px;
     padding: 10px;
