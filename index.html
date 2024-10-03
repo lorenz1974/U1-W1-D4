@@ -19,7 +19,7 @@
 
 <body>
   <div id="pageContainer">
-    <header>
+    <header class="shadowed">
       <img src="./assets/img/logo.svg" alt="Logo Epicode School" />
       <h1>EPICODE - Il Blog dei Developers</h1>
       <menu>
@@ -28,7 +28,7 @@
         <li><i class="fas fa-long-arrow-alt-right"></i> Lavora con noi <i class="fas fa-long-arrow-alt-left"></i></li>
       </menu>
     </header>
-    <main>
+    <main class="shadowed">
       <article>
         <h1>Come creare un template per i post</h1>
         <p class="articleMeta"><i class="fas fa-pen"></i> di Mario Rossi - <i class="fas fa-clock"></i>
@@ -44,14 +44,14 @@
             identificando le parti comuni da applicare a tutte le pagine.
           </p>
           <ul>
-            <li>Contenuti di intestazione del tag &lt;header&gt;</li>
+            <li>Contenuti di intestazione del tag <code>&lt;header&gt;</code></li>
             <li>
-              Contenuti centrali variabili del tag &lt;main&gt; (corpo
+              Contenuti centrali variabili del tag <code>&lt;main&gt;</code> (corpo
               principale)
             </li>
             <li>
               Contenuti di fine pagina comuni, da inserire nel tag
-              &lt;footer&gt;
+              <code>&lt;footer&gt;</code>
             </li>
           </ul>
 
@@ -134,25 +134,34 @@
         </section>
       </article>
       <aside>
+        <div id="newsDiv" class="borderedDiv">
+          <h2 id="newsTitle">Novità</h2>
+          <p>Vuoi rimanere aggiornato su altre novità del blog? Iscriviti alla nostra newsletter:
+          </p>
+          <form><label for="email"></label>
+            <input id="email" type="text" placeholder="inserisci l'email">
+            <button type="submit">Iscriviti!</button>
+          </form>
+        </div>
         <h2 id="relatedArticleTitle">Articoli correlati</h2>
-        <div class="relatedDiv">
-          <h2><a href="#">Titolo</a></h2>
-          <p class="relatedCategory"><i class="fa-solid fa-tag"></i> categoria</p>
-          <p class="relatedMeta"><i class="fa-sharp fa-solid fa-calendar-days"></i></i> Meta</p>
+        <div class="relatedDiv borderedDiv">
+          <h2><a href="#">Validare il codice HTML</a></h2>
+          <p class="relatedCategory"><i class="fas fa-tag"></i> categoria</p>
+          <p class="relatedMeta"><i class="fas fa-calendar-alt"></i> Data: 03-10-2024</p>
         </div>
-        <div class="relatedDiv">
-          <h2><a href="#">Titolo</a></h2>
-          <p class="relatedCategory"><i class="fa-solid fa-tag"></i> categoria</p>
-          <p class="relatedMeta"><i class="fa-sharp fa-solid fa-calendar-days"></i></i> Meta</p>
+        <div class="relatedDiv borderedDiv">
+          <h2><a href="#">Categoria: develop</a></h2>
+          <p class="relatedCategory"><i class="fas fa-tag"></i> categoria</p>
+          <p class="relatedMeta"><i class="fas fa-calendar-alt"></i> Data: 03-10-2024</p>
         </div>
-        <div class="relatedDiv">
-          <h2><a href="#">Titolo</a></h2>
-          <p class="relatedCategory"><i class="fa-solid fa-tag"></i> categoria</p>
-          <p class="relatedMeta"><i class="fa-sharp fa-solid fa-calendar-days"></i></i> Meta</p>
+        <div class="relatedDiv borderedDiv">
+          <h2><a href="#">Meno Kb nella pagina</a></h2>
+          <p class="relatedCategory"><i class="fas fa-tag"></i> categoria</p>
+          <p class="relatedMeta"><i class="fas fa-calendar-alt"></i> Data: 03-10-2024</p>
         </div>
       </aside>
     </main>
-    <footer>
+    <footer class="shadowed">
       <p>Blog Epicode ©2021</p>
       <p>Testata online di Mario Rossi, registrata con prot. n.213/2018 - via Luigi Einaudi 2 - Milano.</p>
       <p>P.IVA 00112233. <a href="mailto:info@epicode.school">info@epicode.school</a></p>
